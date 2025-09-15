@@ -2,17 +2,25 @@ package com.example.restservice.model;
 
 public class Employee {
 
-    private String employee_id;
+    private int employee_id;
     private String first_name;
     private String last_name;
     private String email;
     private String title;
 
     public Employee() {}
+    public Employee(int employee_id, String first_name, String last_name, String email, String title) {
+        this.employee_id = employee_id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+        this.title = title;
+    }
+
 
     // setters
 
-    public void setEmployee_id(String employee_id) {
+    public void setEmployee_id(int employee_id) {
         this.employee_id = employee_id;
     }
     public void setFirst_name(String first_name) {
@@ -30,7 +38,7 @@ public class Employee {
 
     // getters
 
-    public String getEmployee_id() {
+    public int getEmployee_id() {
         return employee_id;
     }
     public String getFirst_name() {

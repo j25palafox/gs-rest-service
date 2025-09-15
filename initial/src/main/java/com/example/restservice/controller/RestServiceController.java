@@ -1,17 +1,17 @@
-package com.example.restservice;
+package com.example.restservice.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class RestServiceController {
 
     @GetMapping("/")
     public String index() {
         return "Welcome to your Spring " +
                 "Boot app!" +
-                " Are changes being tracked" +
-                " in real time though?";
+                " HPE Forage Job Sim";
 
     }
 }
+
